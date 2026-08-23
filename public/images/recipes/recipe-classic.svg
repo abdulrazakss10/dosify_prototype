@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+    <defs>
+      <linearGradient id="recGrad_recipe-classic" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E293B"/>
+        <stop offset="100%" stop-color="#0F172A"/>
+      </linearGradient>
+      <linearGradient id="foodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FEF3C7"/>
+        <stop offset="50%" stop-color="#F59E0B"/>
+        <stop offset="100%" stop-color="#78350F"/>
+      </linearGradient>
+    </defs>
+    <rect width="600" height="400" rx="16" fill="url(#recGrad_recipe-classic)"/>
+    
+    <!-- Food Presentation -->
+    <g transform="translate(300, 180)">
+      <ellipse cx="0" cy="40" rx="200" ry="80" fill="#334155" opacity="0.6"/>
+      <ellipse cx="0" cy="30" rx="180" ry="70" fill="#14532D" opacity="0.8"/>
+      <!-- Dosa -->
+      <path d="M -140 10 C -140 -20, 140 -20, 140 10 C 140 40, -140 40, -140 10 Z" fill="url(#foodGrad)" stroke="#B45309" stroke-width="2"/>
+      <circle cx="-60" cy="45" r="22" fill="#FFFFFF"/>
+      <circle cx="60" cy="45" r="22" fill="#DC2626"/>
+    </g>
+
+    <!-- Recipe Title & Info -->
+    <rect x="0" y="270" width="600" height="130" fill="#090D16" opacity="0.9"/>
+    <text x="30" y="315" font-family="'Inter', sans-serif" font-weight="800" font-size="22" fill="#FFFFFF">Classic Golden Dosa</text>
+    <rect x="30" y="335" width="130" height="26" rx="13" fill="#F59E0B"/>
+    <text x="95" y="352" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#0F172A">Breakfast Classic</text>
+    <text x="540" y="352" text-anchor="end" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#94A3B8">⏱ 5 Mins</text>
+  </svg>

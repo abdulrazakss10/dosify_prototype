@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pouchGrad_FamilyAssortment" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#276E43" />
+      <stop offset="45%" stop-color="#1B4D2E" />
+      <stop offset="100%" stop-color="#123720" />
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.0" />
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.0" />
+      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="dosaRoll" x1="0%" y1="0%" x2="100%" y2="40%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="30%" stop-color="#D97706" />
+      <stop offset="70%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+    <filter id="pouchShadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.25" />
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Pouch Body Outer Contour -->
+  <g filter="url(#pouchShadow)">
+    <!-- Top Seal / Notch Area -->
+    <path d="M 120 40 
+             C 180 35, 320 35, 380 40
+             L 395 75
+             C 330 70, 170 70, 105 75
+             Z" fill="#143D22" />
+    
+    <!-- Top Grip Line & Tear Notches -->
+    <path d="M 100 60 L 115 60 M 385 60 L 400 60" stroke="#0B2614" stroke-width="3" stroke-linecap="round"/>
+    <line x1="120" y1="58" x2="380" y2="58" stroke="#34D399" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"/>
+
+    <!-- Main Standup Pouch -->
+    <path d="M 105 75
+             C 100 160, 80 480, 110 560
+             C 140 590, 360 590, 390 560
+             C 420 480, 400 160, 395 75
+             Z" 
+          fill="url(#pouchGrad_FamilyAssortment)" />
+
+    <!-- Bottom Gusset Fold Shadow -->
+    <path d="M 110 560
+             C 170 585, 330 585, 390 560
+             C 350 540, 150 540, 110 560
+             Z" fill="#0A2012" opacity="0.6"/>
+
+    <!-- Overlay Metallic Gloss / Reflection -->
+    <path d="M 105 75
+             C 100 160, 80 480, 110 560
+             C 140 590, 360 590, 390 560
+             C 420 480, 400 160, 395 75
+             Z" 
+          fill="url(#shineGrad)" />
+  </g>
+
+  <!-- POUCH GRAPHICS & LABELS -->
+  <!-- Top Brand Banner -->
+  <g transform="translate(250, 120)">
+    <!-- Leaf / Modern Accent -->
+    <path d="M -15 -35 C -5 -50, 20 -40, 15 -25 C 10 -15, -10 -20, -15 -35 Z" fill="#4ADE80" opacity="0.9"/>
+    <path d="M 15 -35 C 5 -50, -20 -40, -15 -25" stroke="#14532D" stroke-width="1.5" fill="none"/>
+    
+    <!-- Brand Name DOSIFY -->
+    <text x="0" y="0" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" letter-spacing="3">
+      DOSIFY
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#BBF7D0" letter-spacing="4">
+      INSTANT BATTER MIX
+    </text>
+  </g>
+
+  <!-- Product Title & Variant Badge -->
+  <g transform="translate(250, 185)">
+    <rect x="-140" y="0" width="280" height="55" rx="8" fill="#0E331A" stroke="#22C55E" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="0" y="24" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="800" font-size="16" fill="#FDE047" letter-spacing="2">
+      VARIETY COMBO
+    </text>
+    <text x="0" y="44" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" letter-spacing="3">
+      4-IN-1 MEGA PACK
+    </text>
+  </g>
+
+  <!-- Variant Pill (Classic, Masala, Millet, etc.) -->
+  <g transform="translate(250, 265)">
+    <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#EC4899" filter="url(#glow)"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="800" font-size="14" fill="#1E293B" letter-spacing="1">
+      FAMILY ASSORTMENT
+    </text>
+  </g>
+
+  <!-- Quality Assurance Badges -->
+  <g transform="translate(250, 310)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#86EFAC">
+      ★ Best Value Bundle ★
+    </text>
+  </g>
+
+  <!-- Appetizing Visual Plate Window -->
+  <g transform="translate(250, 435)">
+    <!-- Circular / Oval Platter Background -->
+    <ellipse cx="0" cy="20" rx="125" ry="68" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="2" />
+    <ellipse cx="0" cy="20" rx="118" ry="62" fill="#FEF3C7" opacity="0.35"/>
+
+    <!-- Steaming/Golden Crisp Rolled Dosa -->
+    <g transform="rotate(-6, 0, 15)">
+      <!-- Shadow -->
+      <ellipse cx="-5" cy="22" rx="98" ry="18" fill="#78350F" opacity="0.3"/>
+      
+      <!-- Rolled Dosa Cylinder -->
+      <path d="M -95 10 
+               C -95 -6, -85 -18, -60 -18
+               L 65 -18
+               C 92 -18, 98 -6, 98 10
+               C 98 24, 85 30, 60 30
+               L -65 30
+               C -90 30, -95 22, -95 10
+               Z" fill="url(#dosaRoll)" stroke="#78350F" stroke-width="1.5"/>
+      
+      <!-- Crisp Roasted Texture Marks -->
+      <ellipse cx="-40" cy="2" rx="30" ry="10" fill="#92400E" opacity="0.4" />
+      <ellipse cx="20" cy="-2" rx="45" ry="12" fill="#78350F" opacity="0.35" />
+      <ellipse cx="60" cy="8" rx="20" ry="8" fill="#B45309" opacity="0.5" />
+      <circle cx="-10" cy="6" r="3" fill="#451A03" opacity="0.4"/>
+      <circle cx="35" cy="-5" r="4" fill="#451A03" opacity="0.4"/>
+      
+      <!-- Dosa Spiral End / Edge -->
+      <ellipse cx="75" cy="6" rx="14" ry="20" fill="#D97706" stroke="#92400E" stroke-width="1.5"/>
+      <ellipse cx="75" cy="6" rx="7" ry="12" fill="#78350F"/>
+    </g>
+
+    <ellipse cx="250" cy="460" rx="35" ry="12" fill="#CA8A04" opacity="0.9"/>
+                    <circle cx="245" cy="458" r="4" fill="#15803D"/>
+                    <circle cx="260" cy="460" r="3" fill="#B91C1C"/>
+
+    <!-- Chutney Bowl 1 (Coconut Chutney) -->
+    <g transform="translate(-75, 42)">
+      <circle cx="0" cy="0" r="18" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="15" fill="#FFFFFF"/>
+      <circle cx="-2" cy="-2" r="2" fill="#15803D"/>
+      <circle cx="3" cy="2" r="1.5" fill="#15803D"/>
+      <circle cx="1" cy="-3" r="1" fill="#B91C1C"/>
+      <!-- Mustard seed & curry leaf -->
+      <path d="M 0 0 C 4 -4, 8 -1, 6 3 Z" fill="#15803D" opacity="0.8"/>
+    </g>
+
+    <!-- Chutney Bowl 2 (Tomato / Sambar) -->
+    <g transform="translate(75, 42)">
+      <circle cx="0" cy="0" r="18" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="15" fill="#DC2626"/>
+      <circle cx="0" cy="0" r="11" fill="#EA580C" opacity="0.8"/>
+      <circle cx="2" cy="-2" r="1.5" fill="#78350F"/>
+    </g>
+  </g>
+
+  <!-- Pack Info & Weight -->
+  <g transform="translate(140, 545)">
+    <rect x="-35" y="-12" width="70" height="24" rx="6" fill="#0B2614" stroke="#22C55E" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#4ADE80">
+      100% VEG
+    </text>
+  </g>
+
+  <g transform="translate(360, 545)">
+    <rect x="-35" y="-12" width="70" height="24" rx="6" fill="#FDE047"/>
+    <text x="0" y="4" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="800" font-size="12" fill="#1E293B">
+      2kg
+    </text>
+  </g>
+
+  <!-- Footer Tagline on Pouch -->
+  <text x="250" y="575" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#BBF7D0" letter-spacing="1">
+    READY IN 5 MINS • MAKES CRISPY DOSAS
+  </text>
+</svg>
